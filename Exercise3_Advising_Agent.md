@@ -317,7 +317,7 @@ You will have **5 minutes** to read and prepare, and then must answer **without 
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
 - [MITRE ATLAS](https://atlas.mitre.org)
 - [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/)
-- [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/){:target="_blank"}, optional. See Rule 5.
+- [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/), optional. See Rule 5.
 - [CVSS v3.1 Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)
 - **EPSS**: replace the placeholder with the CVE you are analyzing and open the address in your browser:
   - `https://api.first.org/data/v1/epss?cve=CVE-YYYY-NNNNN`
