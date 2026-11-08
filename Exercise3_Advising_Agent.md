@@ -1,6 +1,3 @@
----
-title: "Exercise 3: The Advising Agent"
----
 
 # Exercise 3: The Advising Agent
 
