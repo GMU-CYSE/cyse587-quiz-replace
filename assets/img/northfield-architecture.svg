@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t">Northfield advising agent architecture</title>
+  <desc id="d">Anyone on the internet can email the shared advising inbox. The advising agent runs on an advisor's workstation in the campus network, reads that inbox, and calls four tools: records.read with a service token for all 4,200 students, calendar.write, email.send to any address with auto-approval for subjects starting with Re:, and catalog.lookup, which reaches the third-party CourseMesh MCP server through mcp-remote 0.1.12 over an outbound connection.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#004d26"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="560" fill="#ffffff"/>
+
+  <!-- zones -->
+  <rect x="10" y="40" width="230" height="505" rx="14" fill="#fdf0f2" stroke="#c97b88" stroke-dasharray="6 5"/>
+  <text x="125" y="68" text-anchor="middle" font-size="16" font-weight="700" fill="#8a1426">Internet</text>
+  <rect x="260" y="40" width="730" height="505" rx="14" fill="#eefaf4" stroke="#4fb585"/>
+  <text x="625" y="68" text-anchor="middle" font-size="16" font-weight="700" fill="#006633">Northfield campus network</text>
+
+  <!-- internet side -->
+  <rect x="35" y="110" width="180" height="80" rx="10" fill="#ffffff" stroke="#a6192e"/>
+  <text x="125" y="145" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2328">Anyone on the internet</text>
+  <text x="125" y="166" text-anchor="middle" font-size="13" fill="#1f2328">can send email</text>
+
+  <rect x="35" y="395" width="180" height="90" rx="10" fill="#ffffff" stroke="#a6192e"/>
+  <text x="125" y="430" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2328">CourseMesh</text>
+  <text x="125" y="450" text-anchor="middle" font-size="13" fill="#1f2328">MCP server</text>
+  <text x="125" y="469" text-anchor="middle" font-size="13" fill="#1f2328">third-party vendor</text>
+
+  <!-- inbox -->
+  <rect x="285" y="100" width="195" height="100" rx="10" fill="#ffffff" stroke="#4fb585"/>
+  <text x="382" y="134" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2328">Shared inbox</text>
+  <text x="382" y="155" text-anchor="middle" font-size="13" fill="#1f2328">advising@</text>
+  <text x="382" y="174" text-anchor="middle" font-size="13" fill="#1f2328">northfield-u.example</text>
+
+  <!-- agent -->
+  <rect x="510" y="175" width="215" height="200" rx="12" fill="#c8f0dc" stroke="#006633" stroke-width="1.5"/>
+  <text x="617" y="212" text-anchor="middle" font-size="16" font-weight="700" fill="#004d26">Advising agent</text>
+  <text x="617" y="240" text-anchor="middle" font-size="13" fill="#1f2328">desktop MCP client on</text>
+  <text x="617" y="259" text-anchor="middle" font-size="13" fill="#1f2328">one advisor's workstation</text>
+  <text x="617" y="291" text-anchor="middle" font-size="13" fill="#1f2328">no inbound connections</text>
+  <text x="617" y="310" text-anchor="middle" font-size="13" fill="#1f2328">outbound connections allowed</text>
+  <text x="617" y="342" text-anchor="middle" font-size="13" font-style="italic" fill="#1f2328">left running, unreviewed</text>
+
+  <!-- tools -->
+  <g font-size="13" fill="#1f2328">
+    <rect x="765" y="85" width="205" height="82" rx="10" fill="#c6ecf4" stroke="#3fa6bd"/>
+    <text x="780" y="110" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">records.read</text>
+    <text x="780" y="132">service token reads all</text>
+    <text x="780" y="151">4,200 students, FERPA data</text>
+
+    <rect x="765" y="185" width="205" height="62" rx="10" fill="#ffffff" stroke="#9db7a6"/>
+    <text x="780" y="210" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">calendar.write</text>
+    <text x="780" y="232">advisor's calendar only</text>
+
+    <rect x="765" y="265" width="205" height="100" rx="10" fill="#ffe9a3" stroke="#d9a900"/>
+    <text x="780" y="290" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">email.send</text>
+    <text x="780" y="312">any address, attachments</text>
+    <text x="780" y="331">auto-approved if subject</text>
+    <text x="780" y="350">starts with "Re:"</text>
+
+    <rect x="765" y="383" width="205" height="72" rx="10" fill="#ffffff" stroke="#9db7a6"/>
+    <text x="780" y="408" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">catalog.lookup</text>
+    <text x="780" y="430">via mcp-remote 0.1.12</text>
+  </g>
+
+  <!-- flows -->
+  <g stroke="#004d26" stroke-width="1.8" fill="none">
+    <path d="M215,150 L281,150" marker-end="url(#a)"/>
+    <path d="M382,200 L382,275 L506,275" marker-end="url(#a)"/>
+    <path d="M725,275 C745,275 745,126 761,126" marker-end="url(#a)"/>
+    <path d="M725,275 C745,275 745,216 761,216" marker-end="url(#a)"/>
+    <path d="M725,275 L761,315" marker-end="url(#a)"/>
+    <path d="M725,275 C745,275 745,419 761,419" marker-end="url(#a)"/>
+    <path d="M867,455 L867,515 L125,515 L125,489" marker-end="url(#a)"/>
+  </g>
+  <text x="440" y="268" text-anchor="middle" font-size="12" fill="#004d26">reads</text>
+  <text x="496" y="507" text-anchor="middle" font-size="12" fill="#004d26">outbound connection</text>
+</svg>

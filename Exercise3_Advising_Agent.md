@@ -5,6 +5,9 @@ title: "Exercise 3: The Advising Agent"
 
 **CYSE 587 / SYST 687, Unit 3 Risk Metrics. In-class group exercise.**
 
+![Illustration: an AI assistant at a university advising workstation receiving email](assets/img/advising-agent.png)
+
+
 <div class="callout gold" markdown="1">
 **This exercise replaces Quiz 3.** There will be no separate Quiz 3. Your grade on this exercise is recorded as your Quiz 3 grade.
 </div>
@@ -95,6 +98,8 @@ Times are measured from the start of class. The instructor keeps the official cl
 ## 6. The Scenario
 
 Northfield University, a fictional institution, deployed an **advising agent** for its School of Engineering in September.
+
+![Architecture of the Northfield advising agent: the shared inbox open to the internet, the agent on an advisor's workstation, its four tools, and the outbound connection to CourseMesh](assets/img/northfield-architecture.svg)
 
 ### 6.1 Deployment
 
