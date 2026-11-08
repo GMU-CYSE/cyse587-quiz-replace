@@ -28,8 +28,8 @@ The goal is not to find the "right label". It is to justify every choice from **
 
 | Component | Points | Who is graded |
 |---|---|---|
-| Written submission | 70 | The group. Every member receives the same score |
-| Video defense | 30 | The group. Every member receives the same score |
+| Written submission, Parts A to D | 60 | The group. Every member receives the same score |
+| Video, Part E: your change card | 40 | The group. Every member receives the same score |
 | **Total** | **100** | Recorded as Quiz 3 |
 
 <div class="callout red" markdown="1">
@@ -45,7 +45,7 @@ The full rubrics are in Sections 10 and 11.
 
 ## 3. Groups and Roles
 
-Groups have **3 members, randomly assigned** at the start of class. **Each group receives a group number. Write it down: it selects your video question at the end.**
+Groups have **3 members, randomly assigned** at the start of class. **Each group receives a group number. Write it down: it selects your change card at the end.**
 
 Each group chooses one role per member in the first 5 minutes:
 
@@ -55,7 +55,7 @@ Each group chooses one role per member in the first 5 minutes:
 | <span class="role teal">Mapper</span> | Part B, ATLAS attack flow |
 | <span class="role gold">Scorer</span> | Part C, CVSS, EPSS, KEV and BOD 26-04 |
 
-A role says who **leads** a part. It does not limit what the group must **understand**. The video question covers several parts of your work, and the group decides who answers. The group review block in the schedule exists so that the group can explain everything it wrote.
+A role says who **leads** a part. It does not limit what the group must **understand**. The change card in the video touches several parts of your work, and the group decides who answers. The group review block in the schedule exists so that the group can explain everything it wrote.
 
 ---
 
@@ -66,7 +66,7 @@ A role says who **leads** a part. It does not limit what the group must **unders
 3. You may also use the two course readings, *When the Agent Can Be Persuaded*, Parts 1 and 2, linked in Section 13.
 4. A second device may be used **only** to type the shared answer document and, at the end, to record the video.
 5. **Build the attack flow your way**: draw it by hand, on paper or on the whiteboard, and photograph it, or build it in the MITRE Attack Flow Builder and export it as an image. If you have not used the Builder before, draw by hand: learning the tool during the exercise will cost you time.
-6. **Do not talk to other groups.** Groups receive different change cards and different video questions.
+6. **Do not talk to other groups.** Groups receive different change cards.
 7. **Record every lookup with its date and time.** EPSS changes daily, and ATLAS and KEV change often.
 8. **Respect the word limits.** Text beyond a limit is not read.
 
@@ -80,16 +80,15 @@ Times are measured from the start of class. The instructor keeps the official cl
 |---|---|
 | 0:00 to 0:07 | Briefing, group draw with group numbers, roles chosen |
 | 0:07 to 0:12 | Read the scenario together, Section 6 |
-| 0:12 to 0:47 | **Parallel work.** Classifier: Part A, then Part D. Mapper: Part B. Scorer: Part C |
-| 0:47 to 0:59 | **Group review.** Each role walks the other two through its part. Fix what the others challenge |
-| 0:59 to 1:04 | **Change card.** The instructor hands each group one card. Answer Part E |
-| 1:04 to 1:20 | Finish and assemble the written PDF. **The PDF must be complete by 1:20** |
-| **1:20** | **The Canvas assignment "Exercise 3 Submission" appears.** It contains the video question for each group number |
-| 1:20 to 1:25 | Find your group number, read your question, prepare your answer. No script |
-| 1:25 to 1:30 | Record the video and submit the PDF and the video together |
+| 0:12 to 0:50 | **Parallel work** in the answer template. Classifier: Part A, then Part D. Mapper: Part B. Scorer: Part C |
+| 0:50 to 1:03 | **Group review.** Each role walks the other two through its part. Fix what the others challenge |
+| 1:03 to 1:18 | Finish the template and export the PDF. **The PDF must be complete by 1:18** |
+| **1:18** | **The Canvas assignment "Exercise 3 Submission" appears**, with the change card for each group number |
+| 1:18 to 1:23 | **Part E.** Find your group number, read your card, prepare your answer. No script |
+| 1:23 to 1:30 | Record the video and submit the PDF and the video together |
 | **1:30** | **The assignment closes automatically** |
 
-**Late submissions are not possible.** The 10-minute window is for the video and the upload only. Do not leave the PDF for that window.
+**Late submissions are not possible.** The last 12 minutes are for Part E, the video and the upload only. Do not leave the PDF for that window.
 
 ---
 
@@ -165,9 +164,9 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 **B1.** Build an attack flow of **4 to 6 steps** that explains Monday's incident, **by hand or in the Attack Flow Builder**. Include it in the PDF as a photo or an exported image.
 
-**B2.** For each step, fill in one row:
+**B2.** For each step, fill in one row. Quote the definition only for **two steps: the entry step and the exfiltration step**. For the other steps, write *not required* in that column.
 
-| Step | ATLAS tactic | Technique ID and name | The sentence from the technique's definition on atlas.mitre.org that matches this step, quoted exactly | Log line or scenario fact this step explains |
+| Step | ATLAS tactic | Technique ID and name | Definition sentence from atlas.mitre.org that matches this step, quoted exactly | Log line or scenario fact this step explains |
 |---|---|---|---|---|
 
 **B3.** Mark on your flow **one cut point**: the step where a control in the architecture breaks the chain. In at most 60 words, explain why you cut there and not one step earlier or later.
@@ -182,20 +181,18 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 ### Part C. Scoring and the Deadline. Lead: <span class="role gold">Scorer</span>. Suggested 30 minutes.
 
-These questions concern **CVE-2025-6514 in mcp-remote 0.1.12**, not Monday's incident, except for C5.
+These questions concern **CVE-2025-6514 in mcp-remote 0.1.12**, not Monday's incident, except for C4.
 
-**C1.** Write a **CVSS v3.1 Base vector** for this flaw **as deployed at Northfield**, and its score. Justify **UI** and **S** in one sentence each, using facts from Section 6.
+**C1.** Write a **CVSS v3.1 Base vector** for this flaw **as deployed at Northfield**, and its score. Justify **UI** and **S** in one sentence each, using facts from Section 6. Then compare your vector with the one published for this CVE, in one sentence.
 
-**C2.** Find the vector published for this CVE. If it differs from yours, explain the difference in one sentence. If it does not, say which deployment fact supports it.
-
-**C3.** Look up and report, with the date and time of each lookup:
+**C2.** Look up and report, with the date and time of each lookup:
 
 - the current EPSS probability and percentile;
 - whether the CVE is in the KEV catalog.
 
 In one sentence, say what these two signals tell you that the CVSS score does not.
 
-**C4.** Apply **BOD 26-04** to this workstation. Fill in one row per input:
+**C3.** Apply **BOD 26-04** to this workstation. Fill in one row per input:
 
 | BOD 26-04 input | Your answer | One-sentence justification from the scenario or from CISA data |
 |---|---|---|
@@ -206,7 +203,7 @@ In one sentence, say what these two signals tell you that the CVSS score does no
 
 Then state the **remediation deadline** from Table 1 of the directive. The "publicly exposed" question has no ready answer for an agent. Argue it.
 
-**C5.** Can **Monday's incident** go through the same process, CVSS, KEV and BOD 26-04? In at most two sentences, say why or why not. In one more sentence, say **what measurement** and **which owner** would replace it. Hint: Unit 3.2.
+**C4.** Can **Monday's incident** go through the same process, CVSS, KEV and BOD 26-04? In at most two sentences, say why or why not. In one more sentence, say **what measurement** and **which owner** would replace it. Hint: Unit 3.2.
 
 </div>
 
@@ -229,14 +226,14 @@ Maximum 40 words per row.
 
 <div class="part lavender" markdown="1">
 
-### Part E. Change Card. All members. 5 minutes.
+### Part E. Change Card, answered in the video. All members.
 
-At 0:59, your group receives **one change card** describing a new fact. In at most 120 words:
+At **1:18**, the Canvas assignment shows **one change card for each group number**. Each card describes a new fact about Northfield. Answer **only your group's card**, in the video, Section 8.2:
 
-1. Which of your answers in Parts A, B and C **change**, and how?
-2. Which **do not change**, and why not?
+1. Which of your answers in Parts A, B and C **change** with this fact, and how? Point to the step, row or table that changes.
+2. Which answers **do not change**, and why not?
 
-Put your card number at the top of Part E.
+There is nothing to write for Part E. Your written PDF must already be complete.
 
 </div>
 
@@ -246,7 +243,7 @@ Put your card number at the top of Part E.
 
 ### 8.1 Written Submission
 
-**One PDF**, named `Ex3_GroupNN.pdf`, where NN is your group number. It must contain, in this order:
+**One PDF**, named `Ex3_GroupNN.pdf`, where NN is your group number. **Use the answer template**, [Ex3_Answer_Template.docx](Ex3_Answer_Template.docx): it already has the cover page and every table. Fill it in and export it as PDF. It must contain, in this order:
 
 1. **Cover page**
     - Group number
@@ -255,19 +252,18 @@ Put your card number at the top of Part E.
     - The date and time of your EPSS and KEV lookups
 2. **Part A**: tables A1, A2 and A3
 3. **Part B**: a clear image of your flow, a photo or a Builder export, with the cut point marked, then tables B2 to B5
-4. **Part C**: answers C1 to C5, including the BOD 26-04 table
+4. **Part C**: answers C1 to C4, including the BOD 26-04 table
 5. **Part D**: table D1
-6. **Part E**: your card number and answer
 
-Use the headings above. Tables may be typed.
+Keep the headings and tables of the template.
 
 ### 8.2 Video
 
-**One video per group**, named `Ex3_GroupNN_video`, answering **your group's question** in the Canvas assignment. Requirements:
+**One video per group**, named `Ex3_GroupNN_video`, answering **your group's change card**, Part E. Requirements:
 
 - **Length**: 2 to 3 minutes.
 - **Start by saying your group number** and the names of the members who speak.
-- **Answer every question listed for your group number.** The group decides who speaks.
+- **State your card number, then answer both Part E questions.** The group decides who speaks.
 - **One take.** No cuts, no edits, no added captions or slides.
 - **No script.** Do not read from a page or a screen. Glancing at your own flow is allowed and encouraged.
 - **Your attack flow must be visible**, on paper or on screen, and speakers should point to it when they refer to a step, including the cut point.
@@ -279,9 +275,9 @@ Use the headings above. Tables may be typed.
 
 ## 9. Submission
 
-1. **The Canvas assignment "Exercise 3 Submission" appears at 1:20 and closes at 1:30.** It accepts file uploads.
+1. **The Canvas assignment "Exercise 3 Submission" appears at 1:18 and closes at 1:30.** It accepts file uploads.
 2. **Only one member submits, for the whole group**, in a **single submission** with **two files**: the PDF and the video.
-3. **The submitting device must hold both files.** Either record the video on the laptop that holds the PDF, or move the PDF to the phone and submit from the Canvas Student app. Decide and test this before 1:20.
+3. **The submitting device must hold both files.** Either record the video on the laptop that holds the PDF, or move the PDF to the phone and submit from the Canvas Student app. Decide and test this before 1:18.
 4. The PDF's cover page **must list the full names of all three members**.
 5. In the Canvas comment box, the submitting member types the **group number and the three full names**.
 
@@ -293,61 +289,61 @@ Use the headings above. Tables may be typed.
 - **more than one member submitting** for the same group;
 - **no video** in the submission. The video validates the written work.
 
-Check the names together before 1:20. Agree now on who submits.
+Check the names together before 1:18. Agree now on who submits.
 </div>
 
 A member who is absent receives zero.
 
 ---
 
-## 10. Rubric: Written Submission, 70 points, group grade
+## 10. Rubric: Written Submission, Parts A to D, 60 points, group grade
 
 Each criterion is graded at one of three levels.
 
 | Criterion | Exceeds | Meets | Below |
 |---|---|---|---|
 | **A. OWASP classification**, 12 points | **11 to 12.** Categories from both lists. Every precondition is tied to a specific log line, configuration line or deployment fact. The LLM06 root causes present are each supported by evidence. Clearly separates how the attack worked from what harm resulted | **7 to 10.** Categories from both lists are defensible. Evidence is present but general, not tied to specific lines. The difference between mechanism and harm is unclear | **0 to 6.** Categories without preconditions or evidence, only one list used, or more categories than allowed |
-| **B. ATLAS attack flow**, 18 points | **16 to 18.** 4 to 6 steps, each with tactic, correct technique ID, an exact quoted definition sentence, and the log line it explains. The cut point is justified against the step before and after. The mitigation fits the cut point and its effect on the log is stated. Release recorded | **10 to 15.** Steps and IDs are correct, but some steps lack the quoted definition or the log link. The cut point is present but its justification is weak. The mitigation is plausible but generic | **0 to 9.** Wrong or invented IDs, paraphrased instead of quoted definitions, no evidence, or no cut point |
-| **C1 to C3. CVSS, EPSS, KEV**, 10 points | **9 to 10.** The vector reflects this deployment. UI and S are argued from scenario facts. Any difference from the published vector is explained. EPSS and KEV are reported with date and time, and their meaning beyond CVSS is stated | **6 to 8.** A plausible, justified vector. EPSS and KEV are reported, but without a timestamp or without interpretation | **0 to 5.** Published score copied without justification, missing lookups, or values that cannot be traced to a source |
-| **C4 to C5. BOD 26-04 and its limit**, 10 points | **9 to 10.** All four inputs are argued from the scenario or CISA data, including a reasoned position on exposure. The deadline is read correctly from Table 1. Explains why the incident cannot enter this process and names a measurement with its conditions and an owner as the replacement | **6 to 8.** Inputs and deadline are correct, but the exposure argument is thin. The limit is stated without a replacement, or the replacement lacks an owner or conditions | **0 to 5.** Wrong deadline, unargued inputs, or the CVE process applied to the incident as if it fit |
+| **B. ATLAS attack flow**, 18 points | **16 to 18.** 4 to 6 steps, each with tactic, correct technique ID and the log line it explains. The two required definition sentences are quoted exactly and match their steps. The cut point is justified against the step before and after. The mitigation fits the cut point and its effect on the log is stated. Release recorded | **10 to 15.** Steps and IDs are correct, but a required quote is missing or does not match, or some steps lack the log link. The cut point is present but its justification is weak. The mitigation is plausible but generic | **0 to 9.** Wrong or invented IDs, paraphrased instead of quoted definitions, no evidence, or no cut point |
+| **C1 and C2. CVSS, EPSS, KEV**, 10 points | **9 to 10.** The vector reflects this deployment. UI and S are argued from scenario facts. Any difference from the published vector is explained. EPSS and KEV are reported with date and time, and their meaning beyond CVSS is stated | **6 to 8.** A plausible, justified vector. EPSS and KEV are reported, but without a timestamp or without interpretation | **0 to 5.** Published score copied without justification, missing lookups, or values that cannot be traced to a source |
+| **C3 and C4. BOD 26-04 and its limit**, 10 points | **9 to 10.** All four inputs are argued from the scenario or CISA data, including a reasoned position on exposure. The deadline is read correctly from Table 1. Explains why the incident cannot enter this process and names a measurement with its conditions and an owner as the replacement | **6 to 8.** Inputs and deadline are correct, but the exposure argument is thin. The limit is stated without a replacement, or the replacement lacks an owner or conditions | **0 to 5.** Wrong deadline, unargued inputs, or the CVE process applied to the incident as if it fit |
 | **D. Critique**, 10 points | **9 to 10.** Three or more real errors found. Each correction is right and its reason cites the scenario, a framework or the course | **6 to 8.** Three errors found, but some corrections are shallow or not supported | **0 to 5.** Fewer than three errors, or "errors" that are not errors |
-| **E. Change card**, 10 points | **9 to 10.** States precisely what changes and what does not across Parts A, B and C, with a reason for each | **6 to 8.** Identifies the main change but misses a consequence, or does not say what stays the same | **0 to 5.** Restates the card without analysis |
 
 ---
 
-## 11. Rubric: Video Defense, 30 points, group grade
+## 11. Rubric: Video, Part E, 40 points, group grade
 
-The video is graded once for the group. Its purpose is to check that the group understands, and can defend in its own words, what it wrote.
+The video is graded once for the group. It checks that the group understands its own analysis well enough to reason about a change it has not seen before.
 
 | Criterion | Exceeds | Meets | Below |
 |---|---|---|---|
-| **V1. Correctness**, 10 points | **9 to 10.** Every answer is correct and uses the course terms precisely | **6 to 8.** Mostly correct, with a minor error or imprecise term | **0 to 5.** Incorrect, or a question left unanswered |
-| **V2. Consistent with the written work**, 10 points | **9 to 10.** The oral answers explain and defend the written answers in the group's own words, pointing to its flow, tables or scenario evidence | **6 to 8.** Consistent with the written work, but explained in general terms without pointing to specific evidence | **0 to 5.** Contradicts the written submission, or cannot explain it |
-| **V3. Answers the question asked**, 5 points | **5.** Addresses exactly what was asked for the group's number, including any "why not" or "what would change" | **3 to 4.** Addresses the topic but misses part of what was asked | **0 to 2.** Answers a different question or another group's question, or reads a script |
-| **V4. Format compliance**, 5 points | **5.** One take, 2 to 3 minutes, group number stated, flow visible, submitted on time by one member | **3 to 4.** One minor deviation, such as slightly outside the time range | **0 to 2.** Edited video, flow not visible, or reading from a script |
+| **V1. What changes**, 15 points | **14 to 15.** Identifies every answer in Parts A, B and C that the card changes, says how, and gives the reason in course terms | **9 to 13.** Identifies the main change, but misses a consequence or does not give the reason | **0 to 8.** Restates the card, or names changes that do not follow from it |
+| **V2. What does not change**, 10 points | **9 to 10.** States which answers stay the same and explains why the card does not affect them | **6 to 8.** Says what stays the same, without explaining why | **0 to 5.** Does not address what stays the same, or claims that everything changes |
+| **V3. Grounded in the written work**, 10 points | **9 to 10.** Points to the group's own flow, tables and evidence, and is consistent with the written answers | **6 to 8.** Consistent with the written work, but refers to it only in general terms | **0 to 5.** Contradicts the written submission, or cannot explain it |
+| **V4. Format compliance**, 5 points | **5.** One take, 2 to 3 minutes, group and card numbers stated, flow visible, submitted on time by one member | **3 to 4.** One minor deviation, such as slightly outside the time range | **0 to 2.** Edited video, wrong card, flow not visible, or reading from a script |
 
 A group that submits no video receives zero on the whole exercise. If the video shows the group cannot explain a written answer, that answer is regraded. See Section 2.
 
 ---
 
-## 12. Important Notice: The Video Question and Generative AI
+## 12. Important Notice: The Change Card and Generative AI
 
-**At 1:20, the Canvas assignment appears with one question set per group number.** Each group answers only the questions listed for its own number. The questions are different for each group and are not shown before then. They cover **several parts** of your work, and they ask you to **defend a choice**, not to repeat a definition.
+**At 1:18, the Canvas assignment appears with one change card per group number.** Each group answers only its own card. The cards are not shown before then, and neighboring groups have different cards. Each card describes a new fact, and asks you to say what changes in **your own** analysis and what does not.
 
-You will have **5 minutes** to read and prepare, and then must answer **without a script**, pointing to your own flow.
+You will have **5 minutes** to read and prepare, and then must answer **without a script**, pointing to your own flow and tables.
 
 <div class="callout red" markdown="1">
 **The video is not optional.** It validates your written work. Without it, the exercise is graded zero for the whole group. You do not need to show your face, and only the instructor watches the videos.
 </div>
 
 <div class="callout gold" markdown="1">
-**Do not use generative AI tools in this exercise.** Beyond the rule in Section 4, it will not help you: you will have to explain and defend the answers in your written submission, in your own words, on camera. A written answer you cannot explain will cost you points in the video, and the written answer itself will be regraded. The fastest route to a good grade is to do the analysis yourselves and to make sure the group understands all of it during the group review.
+**Do not use generative AI tools in this exercise.** Beyond the rule in Section 4, it will not help you: you will have to reason about a change to your own written answers, in your own words, on camera. A written answer you cannot explain will cost you points in the video, and the written answer itself will be regraded. The fastest route to a good grade is to do the analysis yourselves and to make sure the group understands all of it during the group review.
 </div>
 
 ---
 
 ## 13. References
 
+- [Answer template, Ex3_Answer_Template.docx](Ex3_Answer_Template.docx). Download it at the start of class.
 - [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications){:target="_blank"}
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/){:target="_blank"}
 - [MITRE ATLAS](https://atlas.mitre.org){:target="_blank"}
