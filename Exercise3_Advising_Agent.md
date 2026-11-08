@@ -55,16 +55,10 @@ A role says who **leads** a part. It does not limit what the group must **unders
 ## 4. Rules
 
 1. **Generative AI tools are not allowed** at any point in this exercise. This includes chat assistants, coding assistants, AI features inside browsers, documents or search engines, and AI-generated search summaries. See Section 12.
-2. **One laptop per group** for lookups. It may open only these sources:
-   - atlas.mitre.org
-   - genai.owasp.org, for both OWASP lists
-   - first.org, for the CVSS v3.1 calculator, the specification and EPSS
-   - cisa.gov, for the KEV catalog and BOD 26-04
-   - nvd.nist.gov and cve.org
-   - Canvas, only for the course slides of Units 2 and 3 and, at the end, for submission
-3. You may also use the two course readings, *When the Agent Can Be Persuaded*, Parts 1 and 2.
+2. **One laptop per group** for lookups. It may open only the sources listed in **Section 13, References**, plus Canvas for the course slides of Units 2 and 3 and, at the end, for submission.
+3. You may also use the two course readings, *When the Agent Can Be Persuaded*, Parts 1 and 2, linked in Section 13.
 4. A second device may be used **only** to type the shared answer document and, at the end, to record the video.
-5. **Draw the attack flow by hand**, on paper or on the whiteboard, and photograph it. Typed or tool-generated diagrams are not accepted.
+5. **Build the attack flow your way**: draw it by hand, on paper or on the whiteboard, and photograph it, or build it in the MITRE Attack Flow Builder and export it as an image. If you have not used the Builder before, draw by hand: learning the tool during the exercise will cost you time.
 6. **Do not talk to other groups.** Groups receive different change cards and different video questions.
 7. **Record every lookup with its date and time.** EPSS changes daily, and ATLAS and KEV change often.
 8. **Respect the word limits.** Text beyond a limit is not read.
@@ -156,14 +150,14 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 ### Part B. ATLAS Attack Flow. Lead: Mapper. Suggested 30 minutes.
 
-**B1.** **Draw by hand** an attack flow of **4 to 6 steps** that explains Monday's incident. Photograph it for the PDF.
+**B1.** Build an attack flow of **4 to 6 steps** that explains Monday's incident, **by hand or in the Attack Flow Builder**. Include it in the PDF as a photo or an exported image.
 
 **B2.** For each step, fill in one row:
 
 | Step | ATLAS tactic | Technique ID and name | The sentence from the technique's definition on atlas.mitre.org that matches this step, quoted exactly | Log line or scenario fact this step explains |
 |---|---|---|---|---|
 
-**B3.** Mark on your drawing **one cut point**: the step where a control in the architecture breaks the chain. In at most 60 words, explain why you cut there and not one step earlier or later.
+**B3.** Mark on your flow **one cut point**: the step where a control in the architecture breaks the chain. In at most 60 words, explain why you cut there and not one step earlier or later.
 
 **B4.** Name **one ATLAS mitigation**, with its AML.M ID, placed at your cut point. In one sentence, say what it would have prevented in the log.
 
@@ -232,12 +226,12 @@ Put your card number at the top of Part E.
    - The ATLAS release and OWASP list versions you used
    - The date and time of your EPSS and KEV lookups
 2. **Part A**: tables A1, A2 and A3
-3. **Part B**: a clear photo of your hand-drawn flow with the cut point marked, then tables B2 to B5
+3. **Part B**: a clear image of your flow, a photo or a Builder export, with the cut point marked, then tables B2 to B5
 4. **Part C**: answers C1 to C5, including the BOD 26-04 table
 5. **Part D**: table D1
 6. **Part E**: your card number and answer
 
-Use the headings above. Tables may be typed. The attack flow must be the photo of your hand drawing.
+Use the headings above. Tables may be typed.
 
 ### 8.2 Video
 
@@ -247,9 +241,9 @@ Use the headings above. Tables may be typed. The attack flow must be the photo o
 - **Start by saying your group number** and the names of the members who speak.
 - **Answer every question listed for your group number.** The group decides who speaks.
 - **One take.** No cuts, no edits, no added captions or slides.
-- **No script.** Do not read from a page or a screen. Glancing at your own hand-drawn flow is allowed and encouraged.
-- **Your hand-drawn attack flow must be visible**, and speakers should point to it when they refer to a step.
-- **Your face does not need to appear.** You may film only your hand-drawn flow while you speak.
+- **No script.** Do not read from a page or a screen. Glancing at your own flow is allowed and encouraged.
+- **Your attack flow must be visible**, on paper or on screen, and speakers should point to it when they refer to a step, including the cut point.
+- **Your face does not need to appear.** You may film only your flow while you speak.
 - **Privacy.** Only the instructor watches the videos. They are not shown to the class or shared.
 - **Format**: MP4 or MOV. Record at 720p or lower so the upload fits in the window.
 
@@ -282,7 +276,7 @@ Each criterion is graded at one of three levels.
 | Criterion | Exceeds | Meets | Below |
 |---|---|---|---|
 | **A. OWASP classification**, 12 points | **11 to 12.** Categories from both lists. Every precondition is tied to a specific log line, configuration line or deployment fact. The LLM06 root causes present are each supported by evidence. Clearly separates how the attack worked from what harm resulted | **7 to 10.** Categories from both lists are defensible. Evidence is present but general, not tied to specific lines. The difference between mechanism and harm is unclear | **0 to 6.** Categories without preconditions or evidence, only one list used, or more categories than allowed |
-| **B. ATLAS attack flow**, 18 points | **16 to 18.** 4 to 6 steps, each with tactic, correct technique ID, an exact quoted definition sentence, and the log line it explains. The cut point is justified against the step before and after. The mitigation fits the cut point and its effect on the log is stated. Release recorded | **10 to 15.** Steps and IDs are correct, but some steps lack the quoted definition or the log link. The cut point is present but its justification is weak. The mitigation is plausible but generic | **0 to 9.** Wrong or invented IDs, paraphrased instead of quoted definitions, no evidence, no cut point, or a typed diagram |
+| **B. ATLAS attack flow**, 18 points | **16 to 18.** 4 to 6 steps, each with tactic, correct technique ID, an exact quoted definition sentence, and the log line it explains. The cut point is justified against the step before and after. The mitigation fits the cut point and its effect on the log is stated. Release recorded | **10 to 15.** Steps and IDs are correct, but some steps lack the quoted definition or the log link. The cut point is present but its justification is weak. The mitigation is plausible but generic | **0 to 9.** Wrong or invented IDs, paraphrased instead of quoted definitions, no evidence, or no cut point |
 | **C1 to C3. CVSS, EPSS, KEV**, 10 points | **9 to 10.** The vector reflects this deployment. UI and S are argued from scenario facts. Any difference from the published vector is explained. EPSS and KEV are reported with date and time, and their meaning beyond CVSS is stated | **6 to 8.** A plausible, justified vector. EPSS and KEV are reported, but without a timestamp or without interpretation | **0 to 5.** Published score copied without justification, missing lookups, or values that cannot be traced to a source |
 | **C4 to C5. BOD 26-04 and its limit**, 10 points | **9 to 10.** All four inputs are argued from the scenario or CISA data, including a reasoned position on exposure. The deadline is read correctly from Table 1. Explains why the incident cannot enter this process and names a measurement with its conditions and an owner as the replacement | **6 to 8.** Inputs and deadline are correct, but the exposure argument is thin. The limit is stated without a replacement, or the replacement lacks an owner or conditions | **0 to 5.** Wrong deadline, unargued inputs, or the CVE process applied to the incident as if it fit |
 | **D. Critique**, 10 points | **9 to 10.** Three or more real errors found. Each correction is right and its reason cites the scenario, a framework or the course | **6 to 8.** Three errors found, but some corrections are shallow or not supported | **0 to 5.** Fewer than three errors, or "errors" that are not errors |
@@ -309,8 +303,33 @@ A group that submits no video receives zero on the whole exercise. If the video 
 
 **At 1:20, the Canvas assignment appears with one question set per group number.** Each group answers only the questions listed for its own number. The questions are different for each group and are not shown before then. They cover **several parts** of your work, and they ask you to **defend a choice**, not to repeat a definition.
 
-You will have **5 minutes** to read and prepare, and then must answer **without a script**, pointing to your own hand-drawn flow.
+You will have **5 minutes** to read and prepare, and then must answer **without a script**, pointing to your own flow.
 
 **The video is not optional.** It validates your written work. Without it, the exercise is graded zero for the whole group. You do not need to show your face, and only the instructor watches the videos.
 
 **Do not use generative AI tools in this exercise.** Beyond the rule in Section 4, it will not help you: you will have to explain and defend the answers in your written submission, in your own words, on camera. A written answer you cannot explain will cost you points in the video, and the written answer itself will be regraded. The fastest route to a good grade is to do the analysis yourselves and to make sure the group understands all of it during the group review.
+
+---
+
+## 13. References
+
+- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications){:target="_blank"}
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/){:target="_blank"}
+- [MITRE ATLAS](https://atlas.mitre.org){:target="_blank"}
+- [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/){:target="_blank"}
+- [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/){:target="_blank"}, optional. See Rule 5.
+- [CVSS v3.1 Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator){:target="_blank"}
+- **EPSS**: replace the placeholder with the CVE you are analyzing and open the address in your browser:
+  - `https://api.first.org/data/v1/epss?cve=CVE-YYYY-NNNNN`
+  - Read the fields `epss`, `percentile` and `date`. A reply with `"data":[]` means the CVE was not found. Check your typing.
+- **KEV**: search for the CVE you are analyzing in the catalog:
+  - [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog){:target="_blank"}
+  - No result means the CVE is not in the catalog. Record the date and time of your search.
+- **CVE record**: the CISA ADP section shows the SSVC values Exploitation, Automatable and Technical Impact:
+  - `https://www.cve.org/CVERecord?id=CVE-YYYY-NNNNN`
+- **BOD 26-04**: use Table 1 of the directive to read the remediation deadline:
+  - [BOD 26-04, the directive](https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk){:target="_blank"}
+  - [BOD 26-04, implementation guidance](https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk){:target="_blank"}
+- **Course readings**:
+  - [When the Agent Can Be Persuaded, Part 1](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-1-how-to-read-and-connect-owasp-and-mitre-atlas-4bcb04435fb3){:target="_blank"}
+  - [When the Agent Can Be Persuaded, Part 2](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-2-threat-analysis-of-an-ai-agent-from-start-to-finish-51b5ca0ad1be){:target="_blank"}
