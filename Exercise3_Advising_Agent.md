@@ -313,8 +313,8 @@ You will have **5 minutes** to read and prepare, and then must answer **without 
 
 ## 13. References
 
-- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications){:target="_blank"}
-- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/){:target="_blank"}
+- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications)
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
 - [MITRE ATLAS](https://atlas.mitre.org){:target="_blank"}
 - [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/){:target="_blank"}
 - [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/){:target="_blank"}, optional. See Rule 5.
