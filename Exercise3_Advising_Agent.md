@@ -5,7 +5,7 @@ title: "Exercise 3: The Advising Agent"
 
 **CYSE 587 / SYST 687, Unit 3 Risk Metrics. In-class group exercise.**
 
-![Illustration: an AI assistant at a university advising workstation receiving a stream of email](assets/img/advising-agent.jpg)
+![Illustration: an AI assistant at a university advising workstation receiving a stream of email](assets/img/advising-agent.jpeg)
 
 <div class="callout gold" markdown="1">
 **This exercise replaces Quiz 3.** There will be no separate Quiz 3. Your grade on this exercise is recorded as your Quiz 3 grade.
