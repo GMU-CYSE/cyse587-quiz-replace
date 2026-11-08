@@ -1,0 +1,122 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Exercise 3 styles: GMU green and gold, role colors match the briefing deck */
+$green: #006633;
+$green-dark: #004d26;
+$gold: #ffcc33;
+$ink: #1f2328;
+
+.markdown-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $ink;
+}
+
+.markdown-body h1 {
+  color: $green;
+  font-size: 2.3em;
+  border-bottom: none;
+  margin-bottom: 0.2em;
+}
+
+.markdown-body h1 + p {
+  color: #57606a;
+  font-size: 1.05em;
+}
+
+.markdown-body h2 {
+  color: $green;
+  border-bottom: 3px solid $gold;
+  padding-bottom: 0.25em;
+  margin-top: 2em;
+}
+
+.markdown-body h3 {
+  color: $green-dark;
+}
+
+.markdown-body hr {
+  height: 1px;
+  background-color: #d0d7de;
+}
+
+/* Tables */
+.markdown-body table th {
+  background: $green;
+  color: #fff;
+  border-color: $green-dark;
+}
+.markdown-body table tr:nth-child(2n) {
+  background: #f3f8f5;
+}
+.markdown-body table td,
+.markdown-body table th {
+  vertical-align: top;
+}
+
+/* Code blocks: the log and the policy */
+.markdown-body pre {
+  background: #14261c;
+  border-radius: 8px;
+}
+.markdown-body pre code {
+  color: #dff3e6;
+}
+
+/* Callouts */
+.callout {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 18px 0;
+}
+.callout > :first-child { margin-top: 0; }
+.callout > :last-child { margin-bottom: 0; }
+.callout.gold { background: #fff6d6; border-color: #e0b100; }
+.callout.red { background: #fdecef; border-color: #a6192e; }
+.callout.red strong { color: #8a1426; }
+
+/* Parts A to E, colored like the roles */
+.part {
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 4px 22px 10px;
+  margin: 22px 0;
+}
+.part h3 { margin-top: 16px; }
+.part.mint     { background: #eefaf4; border-color: #7fcfa6; }
+.part.teal     { background: #ebf7fa; border-color: #79c3d3; }
+.part.gold     { background: #fffaea; border-color: #e6c35c; }
+.part.rose     { background: #fdf0f2; border-color: #e09aa6; }
+.part.lavender { background: #f4f1fb; border-color: #b3a6dd; }
+.part table tr { background: #fff; }
+.part table tr:nth-child(2n) { background: #f7f9f8; }
+
+/* The junior analyst's memo */
+.part.rose blockquote {
+  background: #fff;
+  border-left: none;
+  border: 1px dashed #c97b88;
+  border-radius: 8px;
+  color: $ink;
+  padding: 10px 16px;
+}
+
+/* Role badges */
+.role {
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9em;
+  border: 1px solid;
+  color: $ink;
+}
+.role.mint { background: #c8f0dc; border-color: #4fb585; }
+.role.teal { background: #c6ecf4; border-color: #3fa6bd; }
+.role.gold { background: #ffe9a3; border-color: #d9a900; }

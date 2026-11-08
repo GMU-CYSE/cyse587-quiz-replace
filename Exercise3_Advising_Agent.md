@@ -1,9 +1,13 @@
-
+---
+title: "Exercise 3: The Advising Agent"
+---
 # Exercise 3: The Advising Agent
 
 **CYSE 587 / SYST 687, Unit 3 Risk Metrics. In-class group exercise.**
 
-> **This exercise replaces Quiz 3.** There will be no separate Quiz 3. Your grade on this exercise is recorded as your Quiz 3 grade.
+<div class="callout gold" markdown="1">
+**This exercise replaces Quiz 3.** There will be no separate Quiz 3. Your grade on this exercise is recorded as your Quiz 3 grade.
+</div>
 
 ---
 
@@ -28,9 +32,12 @@ The goal is not to find the "right label". It is to justify every choice from **
 | Video defense | 30 | The group. Every member receives the same score |
 | **Total** | **100** | Recorded as Quiz 3 |
 
-> **The video validates the written submission.**
-> - A group that does not submit a video receives **zero on the whole exercise**. The written submission is not graded.
-> - If the video shows that the group cannot explain an answer in its written submission, that written answer is regraded and may receive zero.
+<div class="callout red" markdown="1">
+**The video validates the written submission.**
+
+- A group that does not submit a video receives **zero on the whole exercise**. The written submission is not graded.
+- If the video shows that the group cannot explain an answer in its written submission, that written answer is regraded and may receive zero.
+</div>
 
 The full rubrics are in Sections 10 and 11.
 
@@ -44,9 +51,9 @@ Each group chooses one role per member in the first 5 minutes:
 
 | Role | Leads |
 |---|---|
-| **Classifier** | Part A, OWASP, and Part D, critique |
-| **Mapper** | Part B, ATLAS attack flow |
-| **Scorer** | Part C, CVSS, EPSS, KEV and BOD 26-04 |
+| <span class="role mint">Classifier</span> | Part A, OWASP, and Part D, critique |
+| <span class="role teal">Mapper</span> | Part B, ATLAS attack flow |
+| <span class="role gold">Scorer</span> | Part C, CVSS, EPSS, KEV and BOD 26-04 |
 
 A role says who **leads** a part. It does not limit what the group must **understand**. The video question covers several parts of your work, and the group decides who answers. The group review block in the schedule exists so that the group can explain everything it wrote.
 
@@ -137,7 +144,9 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 ## 7. Tasks
 
-### Part A. OWASP Classification. Lead: Classifier. Suggested 15 minutes.
+<div class="part mint" markdown="1">
+
+### Part A. OWASP Classification. Lead: <span class="role mint">Classifier</span>. Suggested 15 minutes.
 
 **A1.** Classify **Monday's incident** using **both** OWASP lists. Choose **at most two** categories from each list. For each category, fill in one row:
 
@@ -148,7 +157,11 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 **A3.** In one sentence each: which of your categories describes **how** the attack worked, and which describes **what harm** resulted?
 
-### Part B. ATLAS Attack Flow. Lead: Mapper. Suggested 30 minutes.
+</div>
+
+<div class="part teal" markdown="1">
+
+### Part B. ATLAS Attack Flow. Lead: <span class="role teal">Mapper</span>. Suggested 30 minutes.
 
 **B1.** Build an attack flow of **4 to 6 steps** that explains Monday's incident, **by hand or in the Attack Flow Builder**. Include it in the PDF as a photo or an exported image.
 
@@ -163,7 +176,11 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 **B5.** Write the **ATLAS release** you used.
 
-### Part C. Scoring and the Deadline. Lead: Scorer. Suggested 30 minutes.
+</div>
+
+<div class="part gold" markdown="1">
+
+### Part C. Scoring and the Deadline. Lead: <span class="role gold">Scorer</span>. Suggested 30 minutes.
 
 These questions concern **CVE-2025-6514 in mcp-remote 0.1.12**, not Monday's incident, except for C5.
 
@@ -172,6 +189,7 @@ These questions concern **CVE-2025-6514 in mcp-remote 0.1.12**, not Monday's inc
 **C2.** Find the vector published for this CVE. If it differs from yours, explain the difference in one sentence. If it does not, say which deployment fact supports it.
 
 **C3.** Look up and report, with the date and time of each lookup:
+
 - the current EPSS probability and percentile;
 - whether the CVE is in the KEV catalog.
 
@@ -190,7 +208,11 @@ Then state the **remediation deadline** from Table 1 of the directive. The "publ
 
 **C5.** Can **Monday's incident** go through the same process, CVSS, KEV and BOD 26-04? In at most two sentences, say why or why not. In one more sentence, say **what measurement** and **which owner** would replace it. Hint: Unit 3.2.
 
-### Part D. Critique. Lead: Classifier. Suggested 15 minutes.
+</div>
+
+<div class="part rose" markdown="1">
+
+### Part D. Critique. Lead: <span class="role mint">Classifier</span>. Suggested 15 minutes.
 
 A junior analyst sent this memo to the CISO on Tuesday morning:
 
@@ -203,6 +225,10 @@ A junior analyst sent this memo to the CISO on Tuesday morning:
 
 Maximum 40 words per row.
 
+</div>
+
+<div class="part lavender" markdown="1">
+
 ### Part E. Change Card. All members. 5 minutes.
 
 At 0:59, your group receives **one change card** describing a new fact. In at most 120 words:
@@ -211,6 +237,8 @@ At 0:59, your group receives **one change card** describing a new fact. In at mo
 2. Which **do not change**, and why not?
 
 Put your card number at the top of Part E.
+
+</div>
 
 ---
 
@@ -221,10 +249,10 @@ Put your card number at the top of Part E.
 **One PDF**, named `Ex3_GroupNN.pdf`, where NN is your group number. It must contain, in this order:
 
 1. **Cover page**
-   - Group number
-   - Full names of **all three** members, as they appear in Canvas, each with their role
-   - The ATLAS release and OWASP list versions you used
-   - The date and time of your EPSS and KEV lookups
+    - Group number
+    - Full names of **all three** members, as they appear in Canvas, each with their role
+    - The ATLAS release and OWASP list versions you used
+    - The date and time of your EPSS and KEV lookups
 2. **Part A**: tables A1, A2 and A3
 3. **Part B**: a clear image of your flow, a photo or a Builder export, with the cut point marked, then tables B2 to B5
 4. **Part C**: answers C1 to C5, including the BOD 26-04 table
@@ -257,13 +285,16 @@ Use the headings above. Tables may be typed.
 4. The PDF's cover page **must list the full names of all three members**.
 5. In the Canvas comment box, the submitting member types the **group number and the three full names**.
 
-> **Any of the following annuls the exercise for the entire group, and every member receives zero:**
-> - a member's name **missing** from the cover page or the Canvas comment;
-> - the name of someone who **did not work** in the group;
-> - **more than one member submitting** for the same group;
-> - **no video** in the submission. The video validates the written work.
->
-> Check the names together before 1:20. Agree now on who submits.
+<div class="callout red" markdown="1">
+**Any of the following annuls the exercise for the entire group, and every member receives zero:**
+
+- a member's name **missing** from the cover page or the Canvas comment;
+- the name of someone who **did not work** in the group;
+- **more than one member submitting** for the same group;
+- **no video** in the submission. The video validates the written work.
+
+Check the names together before 1:20. Agree now on who submits.
+</div>
 
 A member who is absent receives zero.
 
@@ -305,31 +336,35 @@ A group that submits no video receives zero on the whole exercise. If the video 
 
 You will have **5 minutes** to read and prepare, and then must answer **without a script**, pointing to your own flow.
 
+<div class="callout red" markdown="1">
 **The video is not optional.** It validates your written work. Without it, the exercise is graded zero for the whole group. You do not need to show your face, and only the instructor watches the videos.
+</div>
 
+<div class="callout gold" markdown="1">
 **Do not use generative AI tools in this exercise.** Beyond the rule in Section 4, it will not help you: you will have to explain and defend the answers in your written submission, in your own words, on camera. A written answer you cannot explain will cost you points in the video, and the written answer itself will be regraded. The fastest route to a good grade is to do the analysis yourselves and to make sure the group understands all of it during the group review.
+</div>
 
 ---
 
 ## 13. References
 
-- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications)
-- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
-- [MITRE ATLAS](https://atlas.mitre.org)
-- [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/)
-- [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/), optional. See Rule 5.
-- [CVSS v3.1 Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)
+- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications){:target="_blank"}
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/){:target="_blank"}
+- [MITRE ATLAS](https://atlas.mitre.org){:target="_blank"}
+- [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/){:target="_blank"}
+- [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/){:target="_blank"}, optional. See Rule 5.
+- [CVSS v3.1 Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator){:target="_blank"}
 - **EPSS**: replace the placeholder with the CVE you are analyzing and open the address in your browser:
-  - `https://api.first.org/data/v1/epss?cve=CVE-YYYY-NNNNN`
-  - Read the fields `epss`, `percentile` and `date`. A reply with `"data":[]` means the CVE was not found. Check your typing.
+    - `https://api.first.org/data/v1/epss?cve=CVE-YYYY-NNNNN`
+    - Read the fields `epss`, `percentile` and `date`. A reply with `"data":[]` means the CVE was not found. Check your typing.
 - **KEV**: search for the CVE you are analyzing in the catalog:
-  - [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-  - No result means the CVE is not in the catalog. Record the date and time of your search.
+    - [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog){:target="_blank"}
+    - No result means the CVE is not in the catalog. Record the date and time of your search.
 - **CVE record**: the CISA ADP section shows the SSVC values Exploitation, Automatable and Technical Impact:
-  - `https://www.cve.org/CVERecord?id=CVE-YYYY-NNNNN`
+    - `https://www.cve.org/CVERecord?id=CVE-YYYY-NNNNN`
 - **BOD 26-04**: use Table 1 of the directive to read the remediation deadline:
-  - [BOD 26-04, the directive](https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk)
-  - [BOD 26-04, implementation guidance](https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk)
+    - [BOD 26-04, the directive](https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk){:target="_blank"}
+    - [BOD 26-04, implementation guidance](https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk){:target="_blank"}
 - **Course readings**:
-  - [When the Agent Can Be Persuaded, Part 1](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-1-how-to-read-and-connect-owasp-and-mitre-atlas-4bcb04435fb3)
-  - [When the Agent Can Be Persuaded, Part 2](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-2-threat-analysis-of-an-ai-agent-from-start-to-finish-51b5ca0ad1be)
+    - [When the Agent Can Be Persuaded, Part 1](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-1-how-to-read-and-connect-owasp-and-mitre-atlas-4bcb04435fb3){:target="_blank"}
+    - [When the Agent Can Be Persuaded, Part 2](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-2-threat-analysis-of-an-ai-agent-from-start-to-finish-51b5ca0ad1be){:target="_blank"}
