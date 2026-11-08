@@ -98,6 +98,9 @@ Times are measured from the start of class. The instructor keeps the official cl
 
 Northfield University, a fictional institution, deployed an **advising agent** for its School of Engineering in September.
 
+**The story in brief.** An AI agent reads an inbox that anyone on the internet can write to. On Monday, a question about transfer credit arrives, apparently from a student, with a hidden instruction inside. One minute later, the agent has sent the probation list of 87 engineering students to an outside address, and nobody approved it. The sections below give you every fact you need to analyze what happened.
+
+
 ![Architecture of the Northfield advising agent: the shared inbox open to the internet, the agent on an advisor's workstation, its four tools, and the outbound connection to CourseMesh](assets/img/northfield-architecture.svg)
 
 ### 6.1 Deployment
