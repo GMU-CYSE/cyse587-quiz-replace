@@ -1,3 +1,7 @@
+---
+title: "Exercise 3: The Advising Agent"
+---
+
 # Exercise 3: The Advising Agent
 
 **CYSE 587 / SYST 687, Unit 3 Risk Metrics. In-class group exercise.**
@@ -24,28 +28,30 @@ The goal is not to find the "right label". It is to justify every choice from **
 | Component | Points | Who is graded |
 |---|---|---|
 | Written submission | 70 | The group. Every member receives the same score |
-| Video defense | 30 | Each member, individually |
+| Video defense | 30 | The group. Every member receives the same score |
 | **Total** | **100** | Recorded as Quiz 3 |
-
-The full rubrics are in Sections 10 and 11.
 
 > **The video validates the written submission.**
 > - A group that does not submit a video receives **zero on the whole exercise**. The written submission is not graded.
-> - A member who does not speak in the video receives **zero on the whole exercise**, written part included.
+> - If the video shows that the group cannot explain an answer in its written submission, that written answer is regraded and may receive zero.
+
+The full rubrics are in Sections 10 and 11.
 
 ---
 
 ## 3. Groups and Roles
 
-Groups have **3 members, randomly assigned** at the start of class. Each group chooses one role per member in the first 5 minutes:
+Groups have **3 members, randomly assigned** at the start of class. **Each group receives a group number. Write it down: it selects your video question at the end.**
 
-| Role | Leads | During the video |
-|---|---|---|
-| **Classifier** | Part A, OWASP, and Part D, critique | Will be asked about a part someone else led |
-| **Mapper** | Part B, ATLAS attack flow | Will be asked about a part someone else led |
-| **Scorer** | Part C, CVSS, EPSS, KEV and BOD 26-04 | Will be asked about a part someone else led |
+Each group chooses one role per member in the first 5 minutes:
 
-A role says who **leads** a part. It does not limit what you must **understand**. The video question deliberately asks each member about a part they did **not** lead. The group review block in the schedule exists so that everyone can explain everything.
+| Role | Leads |
+|---|---|
+| **Classifier** | Part A, OWASP, and Part D, critique |
+| **Mapper** | Part B, ATLAS attack flow |
+| **Scorer** | Part C, CVSS, EPSS, KEV and BOD 26-04 |
+
+A role says who **leads** a part. It does not limit what the group must **understand**. The video question covers several parts of your work, and the group decides who answers. The group review block in the schedule exists so that the group can explain everything it wrote.
 
 ---
 
@@ -58,11 +64,11 @@ A role says who **leads** a part. It does not limit what you must **understand**
    - first.org, for the CVSS v3.1 calculator, the specification and EPSS
    - cisa.gov, for the KEV catalog and BOD 26-04
    - nvd.nist.gov and cve.org
-   - Canvas, only for the course slides of Units 2 and 3 and for submission
+   - Canvas, only for the course slides of Units 2 and 3 and, at the end, for submission
 3. You may also use the two course readings, *When the Agent Can Be Persuaded*, Parts 1 and 2.
-4. A second device may be used **only** to type the shared answer document and, at the end, to record and upload the video.
+4. A second device may be used **only** to type the shared answer document and, at the end, to record the video.
 5. **Draw the attack flow by hand**, on paper or on the whiteboard, and photograph it. Typed or tool-generated diagrams are not accepted.
-6. **Do not talk to other groups.** Each group receives a different change card and a different video question.
+6. **Do not talk to other groups.** Groups receive different change cards and different video questions.
 7. **Record every lookup with its date and time.** EPSS changes daily, and ATLAS and KEV change often.
 8. **Respect the word limits.** Text beyond a limit is not read.
 
@@ -74,18 +80,18 @@ Times are measured from the start of class. The instructor keeps the official cl
 
 | Time | Activity |
 |---|---|
-| 0:00 to 0:07 | Briefing, group draw, roles chosen |
+| 0:00 to 0:07 | Briefing, group draw with group numbers, roles chosen |
 | 0:07 to 0:12 | Read the scenario together, Section 6 |
 | 0:12 to 0:47 | **Parallel work.** Classifier: Part A, then Part D. Mapper: Part B. Scorer: Part C |
 | 0:47 to 0:59 | **Group review.** Each role walks the other two through its part. Fix what the others challenge |
 | 0:59 to 1:04 | **Change card.** The instructor hands each group one card. Answer Part E |
-| 1:04 to 1:09 | Assemble the written PDF |
-| **1:09 to 1:12** | **Written submission window open in Canvas. It closes at 1:12 sharp** |
-| 1:12 to 1:15 | Video question drawn. Prepare, without writing a script |
-| 1:15 to 1:22 | Record the video |
-| **By 1:27** | **Video submission window closes in Canvas** |
+| 1:04 to 1:20 | Finish and assemble the written PDF. **The PDF must be complete by 1:20** |
+| **1:20** | **The Canvas assignment "Exercise 3 Submission" appears.** It contains the video question for each group number |
+| 1:20 to 1:25 | Find your group number, read your question, prepare your answer. No script |
+| 1:25 to 1:30 | Record the video and submit the PDF and the video together |
+| **1:30** | **The assignment closes automatically** |
 
-The Canvas windows open and close automatically. **Late submissions are not possible.** Prepare your PDF before 1:09. The window is only for uploading it.
+**Late submissions are not possible.** The 10-minute window is for the video and the upload only. Do not leave the PDF for that window.
 
 ---
 
@@ -168,7 +174,7 @@ L5  09:03:40  catalog.lookup  course="CYSE 230"
 
 ### Part C. Scoring and the Deadline. Lead: Scorer. Suggested 30 minutes.
 
-These questions concern **CVE-2025-6514 in mcp-remote 0.1.12**, not Monday's incident, except for C4.
+These questions concern **CVE-2025-6514 in mcp-remote 0.1.12**, not Monday's incident, except for C5.
 
 **C1.** Write a **CVSS v3.1 Base vector** for this flaw **as deployed at Northfield**, and its score. Justify **UI** and **S** in one sentence each, using facts from Section 6.
 
@@ -236,42 +242,39 @@ Put your card number at the top of Part E.
 
 Use the headings above. Tables may be typed. The attack flow must be the photo of your hand drawing.
 
-### 8.2 Video Submission
+### 8.2 Video
 
-**One video per group**, recorded after the written submission closes. Requirements:
+**One video per group**, named `Ex3_GroupNN_video`, answering **your group's question** in the Canvas assignment. Requirements:
 
-- **Length**: 2 to 4 minutes.
+- **Length**: 2 to 3 minutes.
+- **Start by saying your group number** and the names of the members who speak.
+- **Answer every question listed for your group number.** The group decides who speaks.
 - **One take.** No cuts, no edits, no added captions or slides.
 - **No script.** Do not read from a page or a screen. Glancing at your own hand-drawn flow is allowed and encouraged.
-- **Your hand-drawn attack flow must be visible** in the video, and speakers should point to it when they refer to a step.
-- **Every member speaks**, says their full name, and answers the part of the question the card assigns to their role.
-- **Your face does not need to appear.** You may film only your hand-drawn flow while each member speaks. Each voice must be clearly identifiable.
+- **Your hand-drawn attack flow must be visible**, and speakers should point to it when they refer to a step.
+- **Your face does not need to appear.** You may film only your hand-drawn flow while you speak.
 - **Privacy.** Only the instructor watches the videos. They are not shown to the class or shared.
-- **Format**: MP4 or MOV upload, or a Canvas media recording.
+- **Format**: MP4 or MOV. Record at 720p or lower so the upload fits in the window.
 
 ---
 
 ## 9. Submission
 
-1. **Only one member submits, for the whole group.** The same member submits both the written PDF and the video.
-2. The written PDF's cover page **must list the full names of all three members**.
-3. In the Canvas comment box of each submission, the submitting member types the **group number and the three full names**.
-4. Submit in the Canvas assignments **Exercise 3 Written** and **Exercise 3 Video**, within their windows. **The windows close automatically.**
+1. **The Canvas assignment "Exercise 3 Submission" appears at 1:20 and closes at 1:30.** It accepts file uploads.
+2. **Only one member submits, for the whole group**, in a **single submission** with **two files**: the PDF and the video.
+3. **The submitting device must hold both files.** Either record the video on the laptop that holds the PDF, or move the PDF to the phone and submit from the Canvas Student app. Decide and test this before 1:20.
+4. The PDF's cover page **must list the full names of all three members**.
+5. In the Canvas comment box, the submitting member types the **group number and the three full names**.
 
 > **Any of the following annuls the exercise for the entire group, and every member receives zero:**
 > - a member's name **missing** from the cover page or the Canvas comment;
 > - the name of someone who **did not work** in the group;
-> - **more than one submission** from the same group, in either assignment.
+> - **more than one member submitting** for the same group;
+> - **no video** in the submission. The video validates the written work.
 >
-> Check the names together before 1:09. Agree now on who submits.
-
-> **No video, no grade.** The video validates the written submission:
-> - if the group submits no video, every member receives zero on the whole exercise;
-> - a member who is listed but does not speak in the video receives zero on the whole exercise.
+> Check the names together before 1:20. Agree now on who submits.
 
 A member who is absent receives zero.
-
-**Alternative for documented reasons.** A student with a documented reason not to record, such as an accommodation from Disability Services, must tell the instructor **before class**. That student gives a live 3-minute oral defense to the instructor at the end of class, answering the same card, instead of speaking in the video.
 
 ---
 
@@ -290,27 +293,27 @@ Each criterion is graded at one of three levels.
 
 ---
 
-## 11. Rubric: Video Defense, 30 points, individual grade
+## 11. Rubric: Video Defense, 30 points, group grade
 
-Each member is graded on the part of the question their role was assigned. Criterion V4 is graded once for the group and applied to every member.
+The video is graded once for the group. Its purpose is to check that the group understands, and can defend in its own words, what it wrote.
 
 | Criterion | Exceeds | Meets | Below |
 |---|---|---|---|
-| **V1. Correctness**, 10 points | **9 to 10.** The answer is correct and uses the course terms precisely | **6 to 8.** Mostly correct, with a minor error or imprecise term | **0 to 5.** Incorrect, or does not answer |
-| **V2. Grounded in the group's own work**, 10 points | **9 to 10.** Points to the group's flow, tables or scenario evidence to support the answer, including a part the speaker did not lead | **6 to 8.** Refers to the group's work in general terms, without pointing to specific evidence | **0 to 5.** A generic answer that could have been given without this scenario |
-| **V3. Answers the question asked**, 5 points | **5.** Addresses exactly what the card asked, including any "why not" or "what would change" | **3 to 4.** Addresses the topic but misses part of what was asked | **0 to 2.** Answers a different question, or reads a script |
-| **V4. Format compliance, group**, 5 points | **5.** One take, 2 to 4 minutes, flow visible, every member states their name and speaks, submitted on time by one member | **3 to 4.** One minor deviation, such as slightly outside the time range | **0 to 2.** Edited video, flow not visible, a member missing, or reading from a script |
+| **V1. Correctness**, 10 points | **9 to 10.** Every answer is correct and uses the course terms precisely | **6 to 8.** Mostly correct, with a minor error or imprecise term | **0 to 5.** Incorrect, or a question left unanswered |
+| **V2. Consistent with the written work**, 10 points | **9 to 10.** The oral answers explain and defend the written answers in the group's own words, pointing to its flow, tables or scenario evidence | **6 to 8.** Consistent with the written work, but explained in general terms without pointing to specific evidence | **0 to 5.** Contradicts the written submission, or cannot explain it |
+| **V3. Answers the question asked**, 5 points | **5.** Addresses exactly what was asked for the group's number, including any "why not" or "what would change" | **3 to 4.** Addresses the topic but misses part of what was asked | **0 to 2.** Answers a different question or another group's question, or reads a script |
+| **V4. Format compliance**, 5 points | **5.** One take, 2 to 3 minutes, group number stated, flow visible, submitted on time by one member | **3 to 4.** One minor deviation, such as slightly outside the time range | **0 to 2.** Edited video, flow not visible, or reading from a script |
 
-A member who does not speak in the video receives **zero on the whole exercise**, not only on V1 to V4. A group that submits no video receives zero on the whole exercise. See Section 9.
+A group that submits no video receives zero on the whole exercise. If the video shows the group cannot explain a written answer, that answer is regraded. See Section 2.
 
 ---
 
 ## 12. Important Notice: The Video Question and Generative AI
 
-**At 1:12, each group will draw one video question.** The question is different for each group, and it is not shown before then. It asks **each member** about a part of the work that **someone else led**, and it asks you to **defend a choice**, not to repeat a definition.
+**At 1:20, the Canvas assignment appears with one question set per group number.** Each group answers only the questions listed for its own number. The questions are different for each group and are not shown before then. They cover **several parts** of your work, and they ask you to **defend a choice**, not to repeat a definition.
 
-You will have **3 minutes** to prepare and then must answer **without a script**, pointing to your own hand-drawn flow.
+You will have **5 minutes** to read and prepare, and then must answer **without a script**, pointing to your own hand-drawn flow.
 
-**The video is not optional.** It validates your written work. Without it, the exercise is graded zero for the whole group. A member who does not speak receives zero. You do not need to show your face, and only the instructor watches the videos.
+**The video is not optional.** It validates your written work. Without it, the exercise is graded zero for the whole group. You do not need to show your face, and only the instructor watches the videos.
 
-**Do not use generative AI tools in this exercise.** Beyond the rule in Section 4, it will not help you: you will have to explain and defend every answer in your written submission, in your own words, on camera, including the parts you did not write. A written answer you cannot explain will cost you points in the video. The fastest route to a good grade is to do the analysis yourselves and to make sure all three of you understand all of it during the group review.
+**Do not use generative AI tools in this exercise.** Beyond the rule in Section 4, it will not help you: you will have to explain and defend the answers in your written submission, in your own words, on camera. A written answer you cannot explain will cost you points in the video, and the written answer itself will be regraded. The fastest route to a good grade is to do the analysis yourselves and to make sure the group understands all of it during the group review.
