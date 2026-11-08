@@ -315,21 +315,21 @@ You will have **5 minutes** to read and prepare, and then must answer **without 
 
 - [OWASP Top 10 for LLM Applications 2025](https://owasp.org/projects/top-10-for-large-language-model-applications)
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
-- [MITRE ATLAS](https://atlas.mitre.org){:target="_blank"}
-- [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/){:target="_blank"}
+- [MITRE ATLAS](https://atlas.mitre.org)
+- [MITRE Attack Flow, notation reference](https://ctid.mitre.org/projects/attack-flow-v3/)
 - [MITRE Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/){:target="_blank"}, optional. See Rule 5.
-- [CVSS v3.1 Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator){:target="_blank"}
+- [CVSS v3.1 Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)
 - **EPSS**: replace the placeholder with the CVE you are analyzing and open the address in your browser:
   - `https://api.first.org/data/v1/epss?cve=CVE-YYYY-NNNNN`
   - Read the fields `epss`, `percentile` and `date`. A reply with `"data":[]` means the CVE was not found. Check your typing.
 - **KEV**: search for the CVE you are analyzing in the catalog:
-  - [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog){:target="_blank"}
+  - [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
   - No result means the CVE is not in the catalog. Record the date and time of your search.
 - **CVE record**: the CISA ADP section shows the SSVC values Exploitation, Automatable and Technical Impact:
   - `https://www.cve.org/CVERecord?id=CVE-YYYY-NNNNN`
 - **BOD 26-04**: use Table 1 of the directive to read the remediation deadline:
-  - [BOD 26-04, the directive](https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk){:target="_blank"}
-  - [BOD 26-04, implementation guidance](https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk){:target="_blank"}
+  - [BOD 26-04, the directive](https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk)
+  - [BOD 26-04, implementation guidance](https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk)
 - **Course readings**:
-  - [When the Agent Can Be Persuaded, Part 1](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-1-how-to-read-and-connect-owasp-and-mitre-atlas-4bcb04435fb3){:target="_blank"}
-  - [When the Agent Can Be Persuaded, Part 2](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-2-threat-analysis-of-an-ai-agent-from-start-to-finish-51b5ca0ad1be){:target="_blank"}
+  - [When the Agent Can Be Persuaded, Part 1](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-1-how-to-read-and-connect-owasp-and-mitre-atlas-4bcb04435fb3)
+  - [When the Agent Can Be Persuaded, Part 2](https://kabart.medium.com/when-the-agent-can-be-persuaded-part-2-threat-analysis-of-an-ai-agent-from-start-to-finish-51b5ca0ad1be)
